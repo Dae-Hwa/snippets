@@ -1,5 +1,4 @@
 plugins {
-    java
     idea
 }
 
@@ -7,8 +6,8 @@ repositories {
     mavenCentral()
 }
 
-allprojects {
-    group = "dae-hwa.snippets-examples"
+subprojects {
+    apply(plugin = "java")
 }
 
 idea.module {
