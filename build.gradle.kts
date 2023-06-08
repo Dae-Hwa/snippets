@@ -8,6 +8,10 @@ repositories {
 
 subprojects {
     apply(plugin = "java")
+
+    repositories {
+        mavenCentral()
+    }
 }
 
 idea.module {
